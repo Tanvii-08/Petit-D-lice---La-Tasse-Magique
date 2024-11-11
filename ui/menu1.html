@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Délice Menu</title>
+    <link rel="stylesheet" href="menu1.css">
+     <!-- Boxicons CSS 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
+
+    <!-- fontawesome CSS -->
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="cafelogo.png" alt="Logo" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active"  id="homeitem"    aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="menu1.html">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html">Reservation</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="library.html">Library</a></li>
+                  <li><a class="dropdown-item" href="review.html">Reviews</a></li>
+                  <li><a class="dropdown-item" href="events.html">Events & Blogs</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+            <ul class="nav-btns">
+              <div class="cart-btn">
+                  <i class='bx bx-cart'></i>
+              </div>
+
+              <div class="user-btn">
+                  <i class='bx bx-user'></i>
+              </div>
+          </ul>
+           
+          </div>
+         
+          
+        </div>
+    </nav>
+
+
+
+
+    <section id="menu">
+        <div class="menu-container">
+            <h2>Our Special Menu</h2>
+
+            <!-- Daily Specials Section -->
+            <div class="daily-specials">
+                <h3>Today's Specials</h3>
+                
+                <div class="specials-grid">
+                    <div class="menu-item">
+                        <img src="pics/menu/monsieur.jpeg" alt="Crème Brûlée">
+                        <h4>Croque Monsieur</h4>
+                        <p>A classic French grilled ham and</p>
+                        <p>cheese sandwich topped  with </p>
+                        <p>béchamel sauce and more</p>
+                        <p>melted cheese.</p>
+                        <span class="price">₹280</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="pics/menu/chicken.jpeg" alt="Chicken Provençal">
+                        <h4>Chicken Provençal</h4>
+                        <p>Aromatic chicken cooked in olive </p>
+                        <p>oil with herbs, garlic,</p>
+                        <p>and tomatoes.</p>
+                        <span class="price">₹450</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="pics/menu/tatin.jpeg" alt="Saffron Risotto">
+                        <h4>Tarte Tatin</h4>
+                        <p>A classic French upside-down apple </p> 
+                         <p>tart, caramelized to perfection.</p>
+                         
+                        <span class="price">₹350</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Option -->
+        <div class="menu-filters">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('french')">French Dishes</button>
+            <button onclick="filterMenu('indian')">Indian Dishes</button>
+        </div>
+
+            <!-- Regular Menu Section -->
+            <div class="menu-grid">
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/croissant.jpeg" alt="French Croissant">
+                    <h3>French Croissant</h3>
+                    <p>A buttery, flaky pastry,</p>
+                    <p> freshly baked </p>
+                        <p>every morning.</p>
+                    <span class="price">₹150</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/lorraine.jpeg" alt="Quiche Lorraine">
+                    <h3>Quiche Lorraine</h3>
+                    <p>Classic French quiche with </p>
+                    <p>a creamy filling of bacon 
+                    <p>and cheese.</p>
+                    <span class="price">₹300</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/macroons.jpeg" alt="Macarons">
+                    <h3>Assorted Macarons</h3>
+                    <p>Delicate and colorful</p>
+                        <p>macarons in a 
+                            <p>variety of flavors.</p>
+                    <span class="price">₹250</span>
+                </div>
+
+                
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/latte.jpeg" alt="Café Latte">
+                    <h3>Café Latte</h3>
+                    <p>Rich espresso mixed with </p>
+                        <p>steamed milk for a 
+                            <p>smooth taste.</p>
+                    <span class="price">₹180</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/PainAuChocolat.jpg" alt="French Baguette">
+                    <h3>Pain au Chocolat</h3>
+                    <p>Croissant dough filled</p>
+                        <p> with rich chocolate.</p>
+                    <span class="price">₹160</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/onionsoup.jpeg" alt="French Baguette">
+                    <h3>French Onion Soup</h3>
+                    <p>A rich, flavorful soup made </p>
+                        <p>with caramelized onions </p>
+                            <p>and topped with a toasted  </p>
+                                <p> baguette slice and </p>
+                                   <p> melted cheese.</p>
+                    <span class="price">₹250</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/coqauvin.jpeg" alt="French Baguette">
+                    <h3>Coq au Vin</h3>
+                    <p>A classic French dish of</p>
+                        <p>chicken slow-cooked</p>
+                            <p> in red wine.</p>
+                    <span class="price">₹450</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/crepes.jpeg" alt="French Baguette">
+                    <h3>Crêpes (Sweet and Savory)</h3>
+                    <p>*Sweet Crêpes: Filled with </p>
+                    <p>Nutella, fresh fruits,</p>
+                    <p>caramel.</p>
+                       <p>*Savory Crêpes: Filled with</p> 
+                        <p> a variety of ingredients </p> 
+                            <p>like cheese, mushrooms,</p> 
+                                <p>spinach, or even </p> 
+                                    <p>Indian options like</p>
+                                        <p>aloo or paneer.</p>
+                    <span class="price">Sweet Crêpes: ₹220
+                                         Savory Crêpes: ₹250</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/baguette.jpeg" alt="French Baguette">
+                    <h3>French Baguette</h3>
+                    <p>Freshly baked, crispy</p>
+                        <p> on the outside, soft 
+                            <p>on the inside.</p>
+                    <span class="price">₹120</span>
+                </div>
+
+                <div class="menu-itemx french">
+                    <img src="pics/menu/creme-brulee.jpg" alt="French Baguette">
+                    <h3> Crème Brûlée</h3>
+                    <p>A rich, creamy custard</p>
+                        <p> dessert with a </p>
+                        <p> caramelized sugar top.</p>
+                    <span class="price">₹300</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/tea.jpg" alt="Indian Masala Chai">
+                    <h3>Indian Masala Chai</h3>
+                    <p>A spiced, aromatic tea </p>
+                        <p>brewed with traditional</p>
+                            <p> Indian flavors.</p>
+                    <span class="price">₹100</span>
+                </div>
+
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/pink sauce pasta.jpg" alt="Indian Masala Chai">
+                    <h3>Pink Sauce Pasta</h3>
+                    <p>Creamy tomato and cheese </p>
+                        <p>sauce tossed with perfectly </p>
+                            <p>cooked pasta, offering</p>
+                                <p> balance of tangy and </p>
+                                    <p>rich flavors.</p>
+                    <span class="price">₹250</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/cornpizza.jpg" alt="Indian Masala Chai">
+                    <h3>Corn Cheese Pizza</h3>
+                    <p> A crispy thin-crust pizza</p>
+                        <p> loaded with sweet corn</p>
+                            <p> and gooey melted cheese,</p>
+                            <p> perfect for a quick snack.</p>
+                    <span class="price">₹300</span>
+                </div>
+
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/filter coffee.jpg" alt="Indian Masala Chai">
+                    <h3>Filter Coffee</h3>
+                    <p>Authentic South Indian</p>
+                    <p>filter coffee brewed</p>
+                    <p>with freshly ground </p>
+                        <p>coffee beans, served</p>
+                        <p> hot and frothy.</p>
+                    <span class="price">₹120</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/Cheese-Chilli-Toast.jpg" alt="Indian Masala Chai">
+                    <h3>Chilli Cheese Toast
+                    </h3>
+                    <p>Toasted bread topped</p>
+                    <p>with a spicy mix of</p>
+                    <p> green chilies and</p>
+                    <p> melted cheese, a </p>
+                    <p>flavorful and </p>
+                    <p>satisfying snack</p>
+                    <span class="price">₹180</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/maggie.avif" alt="Indian Masala Chai">
+                    <h3> Chilli Cheese Garlic Maggie</h3>
+                    <p>Classic Maggi noodles</p>
+                    <p>enhanced with garlic,</p>
+                    <p>cheese, and a hint</p>
+                    <p>of chili for a tasty,</p>
+                    <p>comforting twist.</p>
+                    <span class="price">₹150</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/peri-peri-fries.jpg" alt="Indian Masala Chai">
+                    <h3> Peri Peri Fries
+                    </h3>
+                    <p>Crispy French fries</p>
+                    <p>seasoned with a</p>
+                    <p>fiery peri peri</p>
+                    <p>spice mix, served</p>
+                    <p> with dipping sauce.</p>
+                    <span class="price">₹160</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/waffle.webp" alt="Indian Masala Chai">
+                    <h3>Banana Strawberry</h3> 
+                    <h3>Nutella Waffles</h3>
+                    <p>Fluffy waffles topped</p>
+                    <p>with fresh banana</p>
+                    <p>slices and a generous</p>
+                    <p>drizzle of Nutella,</p>
+                    <p>perfect for dessert lovers.</p>
+                    <span class="price">₹220</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/sandwhich.jpeg" alt="Indian Masala Chai">
+                    <h3>Club Sandwhich</h3>
+                    <p> A triple-decker sandwich</p>
+                    <p>filled with layers of</p>
+                    <p>veggies, cheese,and</p>
+                    <p>a creamy spread,</p>
+                    <p> served with fries.</p>
+                    <span class="price"> ₹250</span>
+                </div>
+
+                <div class="menu-itemx indian">
+                    <img src="pics/menu/pav-bhaji-fondue.jpg" alt="Indian Masala Chai">
+                    <h3>Pav Bhaji Fondue</h3>
+                    <p>A unique take on the </p>
+                        <p>classic pav bhaji,served</p>
+                            <p>as a fondue with</p>
+                                <p> bread cubes for dipping</p>
+                                    <p> into the spiced</p> 
+                                     <p>vegetable curry.</p>
+                    <span class="price">₹280</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Petit Délice - La Tasse Magique</h3>
+            <p>Your cozy spot for French delights and literary treasures. Enjoy a magical experience with our fusion of French cuisine and Indian café specialties.</p>
+            <p><strong>Address:</strong> 123 Rue de la Gastronomie, Mumbai, Maharashtra, India - 400001</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> petitdelicecafe@gmail.com</p>
+          </div>
+      
+          <div class="footer-section timings">
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+          </div>
+      
+          <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/petitdelice" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/petitdelice" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com/petitdelice" target="_blank">Twitter</a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 Petit Délice - La Tasse Magique. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+      
+    <script>
+         function filterMenu(category) {
+    var items = document.querySelectorAll('.menu-itemx');
+
+    items.forEach(function(item) {
+        if (category === 'all') {
+            item.style.display = 'block';
+        } else if (item.classList.contains(category)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Délice - Library</title>
+    <link rel="stylesheet" href="library.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="cafelogo.png" alt="Logo" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active"  id="homeitem"    aria-current="page" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="menu1.html">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html">Reservation</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="library.html">Library</a></li>
+                  <li><a class="dropdown-item" href="review.html">Reviews</a></li>
+                  <li><a class="dropdown-item" href="events.html">Events & Blogs</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+            <ul class="nav-btns">
+              <div class="cart-btn">
+                  <i class='bx bx-cart'></i>
+              </div>
+
+              <div class="user-btn">
+                  <i class='bx bx-user'></i>
+              </div>
+          </ul>
+          </div>
+         
+          <button class="btnLogin-popup">Login</button>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Our Library Collection</h1>
+        <input type="text" id="searchBar" placeholder="Search for books..." onkeyup="searchBooks()">
+    </header>
+    <div class="book-container" id="bookContainer">
+
+        <div class="book-card">
+            <img src="pics/books/book1.jpeg" alt="Book Cover">
+            <h3>Les Misérables</h3>
+            <h4>Author: Victor Hugo</h4>
+            <p>A monumental novel that portrays 19th-century French society and morality.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book2.jpeg" alt="Book Cover">
+            <h3>Pride and Prejudice</h3>
+            <h4>Author: Jane Austen</h4>
+            <p>A beloved story about love, class, and morality in Regency-era England.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book3.jpeg" alt="Book Cover">
+            <h3>1984</h3>
+            <h4>Author:George Orwell</h4>
+            <p>A haunting portrayal of a totalitarian future, exploring themes of surveillance and individual freedom.</p>
+        </div>
+    
+        <div class="book-card">
+            <img src="pics/books/book4.jpeg" alt="Book Cover">
+            <h3>The Little French Bistro</h3>
+            <h4>Author:Nina George</h4>
+            <p>A heartwarming story set in a charming French seaside town</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book5.jpeg" alt="Book Cover">
+            <h3>The Café by the Sea</h3>
+            <h4>Author:Jenny Colgan</h4>
+            <p>A charming story about a woman returning to her roots in a small seaside town to open a café</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book6.jpeg" alt="Book Cover">
+            <h3>A Moveable Feast</h3>
+            <h4>Author:Ernest Hemingway</h4>
+            <p> A memoir of Hemingway’s time as a young writer in 1920s Paris, providing a vivid portrait of café society.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book7.jpeg" alt="Book Cover">
+            <h3>The Flowers of Evil</h3>
+            <h4>Author:Charles Baudelaire</h4>
+            <p>A collection of dark and beautiful poems that revolutionized French poetry.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book8.jpeg" alt="Book Cover">
+            <h3>Mastering the Art of French Cooking</h3>
+            <h4>Author: Julia Child</h4>
+            <p> The ultimate guide to French cuisine, beloved by home cooks and professionals alike.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book9.jpeg" alt="Book Cover">
+            <h3>All the Light We Cannot See</h3>
+            <h4>Author:Anthony Doerr</h4>
+            <p> A stunning tale of survival and resilience during World War II, partially set in France.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book10.jpeg" alt="Book Cover">
+            <h3>Alice's Adventures in Wonderland</h3>
+            <h4>Author:Lewis Carroll</h4>
+            <p>A whimsical adventure through a fantastical world with delightful characters.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book11.jpeg" alt="Book Cover">
+            <h3>Paris Tales: Stories of Life in the City of Light</h3>
+            <h4>Author:Helen Constantine</h4>
+            <p>An anthology of short stories set in various Paris neighborhoods.
+            </p>
+        </div>
+
+        <div class="book-card">
+            <img src="pics/books/book12.jpeg" alt="Book Cover">
+            <h3>The Night Circus</h3>
+            <h4>Author:Erin Morgenstern</h4>
+            <p>A mesmerizing fantasy about a magical competition between two rival illusionists.</p>
+        </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>Petit Délice - La Tasse Magique</h3>
+          <p>Your cozy spot for French delights and literary treasures. Enjoy a magical experience with our fusion of French cuisine and Indian café specialties.</p>
+          <p><strong>Address:</strong> 123 Rue de la Gastronomie, Mumbai, Maharashtra, India - 400001</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> petitdelicecafe@gmail.com</p>
+        </div>
+    
+        <div class="footer-section timings">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
+          <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+        </div>
+    
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/petitdelice" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com/petitdelice" target="_blank">Instagram</a> |
+          <a href="https://www.twitter.com/petitdelice" target="_blank">Twitter</a>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2024 Petit Délice - La Tasse Magique. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    <script>
+        function searchBooks() {
+    const searchTerm = document.getElementById("searchBar").value.toLowerCase();
+    const books = document.getElementsByClassName("book-card");
+
+    Array.from(books).forEach(book => {
+        const title = book.querySelector("h3").textContent.toLowerCase();
+        if (title.includes(searchTerm)) {
+            book.style.display = "block";
+        } else {
+            book.style.display = "none";
+        }
+    });
+}
+
+    </script>
+    <!-- Bootstrap JS Bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- jQuery JS Bundle -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <!-- Owl Carousel JS Bundle -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+ <!-- LightGallery JS Bundle -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+</body>
+</html>

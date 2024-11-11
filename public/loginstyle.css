@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*scroll bar */
+::-webkit-scrollbar{
+    width: 10px;
+    background:#f9f6f0;
+    color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:  tomato;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*.navbar{
+    padding: 18px 18px;
+}*/
+
+/*default settings*/
+section{
+    padding: 5px 1rem 23px 1rem;
+    padding-right: 12px;
+    margin-bottom: -1px;
+    width: 100%;
+    overflow: hidden;
+}
+img{
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    vertical-align: middle;
+}
+h1{
+    font-size: 48px;
+     font-weight: 500;
+     color: #2c2c2c;
+     line-height: 1.2;
+}
+h2{
+    color: #2c2c2c;
+}
+h3{
+    font-family: 'cookie',sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 34px;
+    margin-bottom: 15px;
+    line-height: 28px;
+    color: #ed2433;
+}
+h4{
+    color: #2c2c2c;
+    line-height: 1.8;
+    font-size: 24px;
+}
+h5{
+    color:#ed2433;
+    font-size: 20px;
+}
+p{
+    padding: 5px 0;
+    font-size: 18px;
+    color: #353535;
+    line-height: 28px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+#navbar{
+    position: absolute;
+    top: 45px;
+    left:15px;
+    right:12px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    height: 5.5rem;
+    margin: 0.4rem;
+    border-radius: 60px;
+    justify-content: space-between;
+    padding: 55px 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 4px hsla(0, 0%,0,0.2);
+}
+
+
+
+
+
+.cart-btn, .user-btn {
+    color: #fff;
+}
+
+.nav-btns {
+    position: absolute;
+    justify-content: space-between;
+    /*background-color: #2c2c2c;*/
+    margin-left:70%;
+    gap: 28px; /* Space between the cart and user icons */
+    align-items: center;
+  
+}
+
+.navbar-brand img {
+    
+    margin-bottom: 20px;
+    height: 135px;
+    width: 137px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+
+#homeitem,
+.nav-item .nav-link{
+    color:white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover{
+    color:yellow;
+    background-color:#2c2c2c;
+    font-size: 26px;
+
+}
+#homeitem:hover{
+color: yellow;
+ background-color:#2c2c2c;
+    font-size: 26px;
+
+}
+.navbar-toggler-icon,span navbar-toggler-icon{
+    color: #fff;
+    background-color: white;
+    font-size: 24px;
+    margin-bottom: 32px;
+
+}
+
+
+/*.nav-item .nav-link i {
+    margin-right: 8px;
+}
+.nav-btns {
+    display: flex;
+    
+}*/
+
+.cart-btn, .user-btn {
+    color: #fff;
+    font-size: 45px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+ .user-btn:hover {
+    font-size: 50px;
+}
+.cart-btn:hover{
+    font-size: 50px;
+}
+.dropdown-item{
+    font-size: 25px;
+}
+.dropdown-item:hover{
+   
+    font-size: 28px;
+  
+}
+#navbar.fixed{
+    padding: 0 4.5rem;
+    margin: 0;
+    position: fixed;
+    top:0;
+    border-radius: 0;
+    height: 4rem;
+    background-color: blanchedalmond;
+}
+#navbar.scrolled {
+    background-color: pink !important;
+    transition: background-color 0.3s ease;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#home {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+.carousel-item img {
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Maintain aspect ratio, cover the entire slide */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay behind text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    color: #fff;
+}
+
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    margin-top: 20%;
+    margin-left: 40%;
+    height: 400px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.5s ease,height 0.2s ease;
+    transform: scale(0);
+}
+
+.btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.btnLogin-popup:hover{
+    background: #2c2c2c;
+    color: #f9f6f0;
+}
+.wrapper.active-popup{
+    transform: scale(1);
+}
+.wrapper.active{
+    height: 520px;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px soli #162938;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left:5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.input-box  input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+
+.remember-forgot{
+    font-size: .9em;
+    color:#162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:45px;
+    height: 45px;
+   background-color: #162938;
+    font-size: 2em;
+    color: #e2c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+ 
+    border-bottom-left-radius:20px ;
+    cursor: pointer;
+    z-index: 1;
+}
+.login-register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:#162938;
+    line-height: 57px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+body{
+    background: url(pics/home/carousel/pic1);
+}
+
+.wrapper .form-box.login{
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.wrapper.active .form-box.register{
+    transition:transform .18s ease;
+    transform: translateX(0);
+}
+
+
+
+
+/* Background carousel styling */
+.background-carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Put it behind the content */
+}
+
+.carousel-slide {
+    display: flex;
+    width: 300%;
+    animation-direction: normal;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Keyframes for the sliding effect */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
